@@ -11,16 +11,29 @@ a{
     color: white;
 }
 
+.button{
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.button-black{
+    background-color: black;
+    color: white;
+}
 
 /* reagole header */
 
 header{
     background-image: url(/img/jumbo.png);
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #main-nav{
-    margin:  0 20%;
+    margin:  0 10% 5%;
     padding: 20px 0;
     display: flex;
     justify-content: center;
@@ -29,9 +42,7 @@ header{
 }
 
 .nav-button{
-    padding: 10px;
-    width: 17%;
-    color: white;
+    padding: 8px;
     /* background-color: rgb(218, 165, 32);
     border: dashed 2px; */
 }
@@ -42,11 +53,12 @@ header{
     display: flex; 
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 30px;
 }
 
 /* Jumbotron 1 */
 #intestazione{
+    padding-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,20 +66,42 @@ header{
     background-color: rgb(0, 0, 98);*/
 }
 
-/* regole main */
-
-.pink-square{
+.jumbo{
     width: 40%;
     height: 300px;
-    background-color: rgb(249, 88, 201);
-    border: 1px dashed black;
+    text-align: center;
+    color: white;
+    /* background-color: rgb(249, 88, 201);
+    border: 1px dashed black; */
 }
+
+.jumbo h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.jumbo p{
+    margin-bottom: 20px;
+}
+
+.jumbo span{
+    margin:20px;
+    font-weight: 550;
+}
+
+
+.arrow::before{
+    content: "\2193";
+    margin-right: 5px;
+    vertical-align: 3px;
+}
+
+/* regole main */
 
 /* SEZIONE 2 */
 .white-section{
-    /* DEBUG */
     background-color: white;
-    height: 400px;
+    min-height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,10 +113,11 @@ header{
 }
 
 .blue-square{
-    height: 300px;
-    background-color: royalblue;
     border: 1px dashed black;
     flex-grow: 2;
+    /* DEBUG */
+    height: 300px;
+    background-color: royalblue;
 }
 
 .rose-square{
