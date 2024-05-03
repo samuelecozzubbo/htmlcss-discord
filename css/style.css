@@ -18,6 +18,7 @@ a{
     padding: 10px;
     font-size: 110%;
     font-weight: 520;
+    cursor: pointer;
 }
 
 .button-black{
@@ -45,7 +46,7 @@ p{
 /* reagole header */
 
 header{
-    background-image: url(/img/jumbo.png);
+    background-image: url(../img/jumbo.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: inline-block;
@@ -214,7 +215,7 @@ header{
 /* Bandiere lingua */
 #red-box #language::before{
     content: '';
-    background-image: url('/img/ita.png');
+    background-image: url(../img/ita.png);
     background-size: 35px 23.5px;
     background-repeat: no-repeat;
     display: inline-block;
