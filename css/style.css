@@ -123,19 +123,19 @@ header{
 
 .blue-square{
     flex-grow: 2;
-    border: 1px dashed black;
     margin-right: 5%;
     /* DEBUG 
     height: 300px;
     background-color: royalblue;
+    border: 1px dashed black;
     */
 }
 
 .rose-square{
-    border: 1px dashed black;
     flex-grow: 1;
     /* min-height: 300px;
-    background-color: pink; */
+    background-color: pink;
+    border: 1px dashed black; */
 }
 
 /* Sezione 3 */
@@ -159,12 +159,12 @@ header{
 /* Sezione 5 */
 .green-square{
     width: 60%;
-    border: 1px dashed black;
     margin: 3% 0;
     text-align: center;
     /* DEBUG 
     height: 1000px;
-    background-color:green;*/
+    background-color:green;
+    border: 1px dashed black;*/
 }
 
 .green-square h3{
@@ -195,14 +195,13 @@ header{
 
 #red-box{
     width: 14%;
-    border: 1px dashed white;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding-top: 1%;
     /* DEBUG
     background-color: brown;
-    min-height: 350px; */
+    min-height: 350px;
+    border: 1px dashed white; */
 }
 
 #red-box div{
@@ -211,7 +210,13 @@ header{
 }
 
 #red-box #language::before{
-    content: url(/img/ita.png);
+    content: '';
+    background-image: url('/img/ita.png');
+    background-size: 35px 23.5px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px;
+    height: 23.5px;
 }
 
 #red-box #language::after{
@@ -244,10 +249,10 @@ header{
 
 .acqua-box{
     width: 9%;
-    border: 1px dashed white;
     /* DEBUG
     background-color: aquamarine;
-    min-height: 350px; */
+    min-height: 350px;
+    border: 1px dashed white; */
 }
 
 .information{
@@ -255,13 +260,15 @@ header{
     min-height: 350px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    gap: 30px;
     font-size: 120%;
 }
+
 
 .blue-element{
     color: rgb(180, 180, 245);
 }
+
 /* Regole footer */
 footer{
     background-color: rgba(0, 0, 0, 0.95);
@@ -273,7 +280,7 @@ footer{
 
 #footer-section{
     width: 50%;
-    padding-bottom: 5%;
+    padding-bottom: 3%;
     display: flex;
     justify-content: space-between;
     /* DEBUG
