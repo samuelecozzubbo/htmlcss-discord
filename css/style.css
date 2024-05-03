@@ -24,6 +24,15 @@ a{
     color: white;
 }
 
+h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+p{
+    margin-bottom: 20px;
+}
+
 /* reagole header */
 
 header{
@@ -75,15 +84,6 @@ header{
     border: 1px dashed black; */
 }
 
-.jumbo h1{
-    font-size: 50px;
-    margin-bottom: 20px;
-}
-
-.jumbo p{
-    margin-bottom: 20px;
-}
-
 .jumbo span{
     margin:20px;
     font-weight: 550;
@@ -105,36 +105,40 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 3%;
 }
 
 .square-container{
     display: flex;
-    width: 50%;
+    width: 65%;
+    padding-bottom: 3%;
 }
 
 .blue-square{
-    border: 1px dashed black;
     flex-grow: 2;
-    /* DEBUG */
+    border: 1px dashed black;
+    margin-right: 5%;
+    /* DEBUG 
     height: 300px;
     background-color: royalblue;
+    */
 }
 
 .rose-square{
-    height: 300px;
-    background-color: pink;
     border: 1px dashed black;
-    height: 300px;
     flex-grow: 1;
+    /* min-height: 300px;
+    background-color: pink; */
 }
+
 /* Sezione 3 */
 .gray-section{
-    /* DEBUG */
-    background-color: lightgray;
-    min-height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 3%;
+    background-color: lightgray;
+    min-height: 400px;
 }
 
 .gray-section .blue-square{
